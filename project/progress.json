@@ -1,0 +1,25 @@
+{
+  "project": "FRIDAY",
+  "updated_at": "2026-04-29",
+  "current_milestone": {
+    "id": 0,
+    "name": "Foundation",
+    "status": "active"
+  },
+  "completed_items": [
+    "Initial project documentation created",
+    "Simplified MVP defined",
+    "Architecture documented",
+    "Roadmap and handoff process created"
+  ],
+  "next_steps": [
+    "Choose runtime split",
+    "Implement TTS adapter",
+    "Define OpenClaw integration boundary"
+  ],
+  "notes": [
+    "User wants proactive speech, vision, hearing, and engineering assistance.",
+    "External LLM access is expected to be available.",
+    "Future self-improvement should be gated and reviewable."
+  ]
+}

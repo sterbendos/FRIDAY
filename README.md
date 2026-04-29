@@ -1,29 +1,33 @@
 # FRIDAY
 
-FRIDAY is a proactive desktop AI assistant for Caine/OpenClaw.
+FRIDAY is a proactive desktop AI assistant inspired by the kind of ambient, multimodal assistant seen in Iron Man.
 
-The goal is not to build "full Iron Man FRIDAY" first. The goal is to build a safe MVP that can:
+The goal is not to build a science-fiction system on day one. The goal is to build a practical MVP that can:
 
 - hear the user
 - see the desktop and optional webcam
 - speak back out loud
 - notice context and start conversations sometimes
-- help with engineering work on the PC/WSL setup
+- help with engineering and desktop workflows
 - leave room for future growth
 
 ## MVP in one sentence
 
-Build a local orchestrator around Caine so he can observe, decide, and speak, instead of only waiting for typed prompts.
+Build a local orchestrator that can observe, decide, and speak, instead of only waiting for typed prompts.
 
-## Core idea
+## What FRIDAY is
 
-Today Caine is mostly reactive.
+Most AI assistants are reactive: you type something, they answer, and then they stop.
 
-The MVP makes him event-driven:
+FRIDAY is intended to be event-driven:
 
 - inputs come from microphone, screen, webcam, files, and timers
 - a controller decides whether to stay quiet, notify, ask, or act
-- outputs go to speech, logs, and existing OpenClaw skills
+- outputs go to speech, logs, and connected tools
+
+The long-term vision is a local assistant that can work alongside the user throughout the day, especially during technical and engineering tasks.
+
+FRIDAY is designed to work as a multimodal orchestration layer on top of an existing agent stack, tool runtime, or local automation system.
 
 ## Initial scope
 
@@ -36,6 +40,25 @@ The first version should support:
 - proactive check-ins on a schedule with cooldowns
 - engineering assistant workflows through existing file access
 - a shared project memory so multiple agents can continue the work
+
+## Why this project exists
+
+The interesting problem is not just "add speech to a chatbot."
+
+The real problem is building an assistant that can:
+
+- understand when the user is present
+- notice what is happening on the machine
+- decide whether speaking is actually useful
+- stay modular enough to expand over time
+
+## Design principles
+
+- local-first where practical
+- modular adapters for audio, vision, memory, and tools
+- safe autonomy instead of unrestricted autonomy
+- proactive behavior with cooldowns and controls
+- room for future self-improvement workflows with review gates
 
 ## Non-goals for MVP
 
@@ -58,3 +81,5 @@ The first version should support:
 ## Current status
 
 Current phase: planning and scaffolding.
+
+The repository currently contains the MVP definition, architecture notes, roadmap, and project operating docs for future implementation.
